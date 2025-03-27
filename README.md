@@ -30,3 +30,23 @@ SQLi-Simulation-DVWA/<br/>
 ### 🔹 Target URL:
 ```http
 http://dvwa.structreuality.com/vulnerabilities/sqli/?id=#
+
+
+🔹 Steps Performed:
+Initial Request:
+
+Confirmed SQLi injection point on id parameter
+
+Database Enumeration:
+
+Used UNION SELECT to extract:
+
+table_schema, table_name from information_schema.tables
+
+column_name from information_schema.columns
+
+Credential Dump:
+
+Retrieved usernames and password hashes:
+
+' UNION SELECT CONCAT(user, ' ', avatar), password FROM users#
